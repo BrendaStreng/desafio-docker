@@ -1,5 +1,13 @@
-<title>Receitas Cadastradas</title>
-<link rel="stylesheet" href="style.css">
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas Cadastradas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
 <?php
 $host = 'db';
 $db = 'receitas_baleia';
@@ -39,3 +47,6 @@ try {
     echo "Erro: " . $e->getMessage();
 }
 ?>
+
+</body>
+</html>

@@ -6,6 +6,7 @@
   <title>Receitas para Baleias</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
+  <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
