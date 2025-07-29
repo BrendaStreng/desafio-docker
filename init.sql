@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS receitas_baleia;
+USE receitas_baleia;
+
+CREATE TABLE IF NOT EXISTS receitas (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  descricao TEXT NOT NULL
+);

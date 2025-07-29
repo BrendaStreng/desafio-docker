@@ -1,0 +1,352 @@
+* {
+  box-sizing: border-box;
+ 
+}
+
+body {
+  background-color: #e0f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  
+}
+
+/* Layout principal */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+  padding-top: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.coluna-receitas {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: #e0f7fa;
+  padding: 20px;
+  padding-top: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 300px;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-self: stretch;
+  
+}
+
+.coluna-formulario {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #e0f7fa;
+  padding: 10px;
+  padding-top: 5px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 300px;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-self: stretch;
+ }
+
+/* Formulário */
+.coluna-formulario form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  background-color: #ffffffcc;
+  border-radius: 15px;
+  padding: 10px;
+  padding-bottom: 23px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+form input[type="text"],
+form textarea {
+  width: 90%;
+  padding: 10px;
+  border: 2px solid #80d0ff;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+form input[type="text"] {
+  height: 50px;
+  margin-top: 30px;
+}
+
+form textarea {
+  height: 290px;
+  resize: vertical;
+  margin-top: 1px;
+  margin-bottom: 10px;
+}
+
+/* Botões */
+form button,
+button {
+  background-color: #00bcd4;
+  color: white;
+  padding: 20px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  
+}
+
+form button:hover,
+button:hover {
+  background-color: #0097a7;
+}
+
+
+/* Cards */
+.card {
+  background: #e0f7fa;
+  background-color: #b2ebf2;
+  padding: 5px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.card-baleia {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.card-baleia:hover {
+  background-color: #0097a7;
+  transform: scale(1.02);
+}
+
+.card-baleia h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.card-baleia p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.card,
+.card-baleia{
+  min-height: 130px;
+}
+
+/* Textos */
+.coluna-receitas h1,
+.coluna-formulario h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.intro-form {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+  max-width: 400px;
+  text-align: center;
+  
+}
+.coluna-receitas p {
+  margin: 4;
+}
+p#mensagem{
+ margin: 15px;
+}
+
+
+
+
+/* Lista de receitas */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background-color: #ffffffdd;
+  margin: 10px auto;
+  padding: 10px 15px;
+  border-radius: 10px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  word-break: break-word;
+}
+
+li div {
+  flex-grow: 1;
+  padding-right: 10px;
+  word-break: break-word; 
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.receita {
+  display: flex;
+  flex-direction: column;
+  background: #fefefe;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 10px auto;
+  max-width: 500px;
+  box-shadow: 0 0 5px #cce7ff;
+  text-align: left;
+}
+
+.titulo {
+  font-weight: bold;
+  color: #005f73;
+  margin-bottom: 5px;
+}
+
+.descricao {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.delete-btn {
+  background-color: #ff69b4;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  width: fit-content;
+  align-self: flex-end;
+  transition: background-color 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #ff4081;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .coluna-receitas,
+  .coluna-formulario {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .coluna-formulario form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Animação das bolhas */
+@keyframes bolhas {
+  0% {
+    transform: translateY(0) scale(1) rotate(0deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-500px) scale(1.2) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.bolha {
+  position: fixed;
+  bottom: -50px;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: bolhas 10s infinite ease-in;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.6),
+              inset 2px 2px 4px rgba(0, 0, 255, 0.1),
+              0 0 10px rgba(173, 216, 230, 0.5);
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+/* Cores e tamanhos diferentes das bolhas */
+.bolha1 { left: 10%; width: 18px; height: 18px; background: rgba(173, 216, 230, 0.5); animation-delay: 0s; }
+.bolha2 { left: 25%; width: 40px; height: 40px; background: rgba(135, 206, 250, 0.5); animation-delay: 1s; }
+.bolha3 { left: 40%; width: 20px; height: 20px; background: rgba(176, 224, 230, 0.5); animation-delay: 2s; }
+.bolha4 { left: 60%; width: 18px; height: 18px; background: rgba(0, 191, 255, 0.2); animation-delay: 3s; }
+.bolha5 { left: 75%; width: 15px; height: 15px; background: rgba(173, 216, 230, 0.3); animation-delay: 4s; }
+.bolha6 { left: 95%; width: 50px; height: 50px; background: rgba(0, 191, 255, 0.3); animation-delay: 3s; }
+.bolha7 { left: 80%; width: 20px; height: 20px; background: rgba(173, 216, 230, 0.3); animation-delay: 4s; }
+
+
+/* footer */
+.footer {
+  margin-top: 150px;
+  padding: 10px;
+  background-color: #00bcd4;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-top: 2px solid #0097a7;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: #ffe0f0;
+}
